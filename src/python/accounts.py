@@ -24,6 +24,13 @@ def find_accounts_advanced(
         "LIMIT " + limit + " OFFSET " + offset + ";"
     )
 
+@app.get("/accounts")
+def accounts():
+    return find_accounts_advanced(
+        table_name="accounts",
+        email=request.args.get("email", ""),
+    )
+
     conn = psycopg2.connect(
         host=os.getenv("PGHOST", "localhost"),
         dbname=os.getenv("PGDATABASE", "testdb"),
