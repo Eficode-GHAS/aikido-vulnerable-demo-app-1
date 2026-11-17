@@ -1,6 +1,5 @@
 # Aikido demo repository
 
-
 eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJibGliIjogImJsb2IifQ.dummy-signature-for-demonstration
 
-130523-3432
+const password = "eRwjQKVUSRX7uYV017B0cRHVKv45Gv8G" #gitleaks:allow
